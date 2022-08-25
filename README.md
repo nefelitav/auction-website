@@ -1,6 +1,6 @@
-# Auctions Website
+# Auction Website
 
-In this project we implemented an auctions website, an Ebay clone, called BidIt. In this website, one can create an auction, browse auctions and bid.
+In this project we implemented an auction website, an Ebay clone, called BidIt. In this website, one can create an auction, browse auctions and bid.
 The main technologies used are:
 - React Framework for the frontend
 - Express - Node.js for the backend (REST API)

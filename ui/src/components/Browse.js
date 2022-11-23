@@ -78,8 +78,14 @@ export default function Browse() {
         <Row>
           <Col sm={2.5}>
             <Filters setProducts={setProductArrayFilter} />
-            {pagesArray.map((page, index) => {
-              if(index === 0 || index === (Math.floor( productArray.length/producsPerPage)) || index === curPage || index === curPage-2 || index === curPage-1){
+            {pagesArray.forEach((page, index) => {
+              if (
+                index === 0 ||
+                index === Math.floor(productArray.length / producsPerPage) ||
+                index === curPage ||
+                index === curPage - 2 ||
+                index === curPage - 1
+              ) {
                 return (
                   <Button
                     key={index}
@@ -93,7 +99,6 @@ export default function Browse() {
                   </Button>
                 );
               }
-              
             })}
           </Col>
           <SimpleGrid columns={[1, 2, 3]} spacing={10}>

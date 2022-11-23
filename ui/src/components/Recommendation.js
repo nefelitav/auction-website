@@ -62,10 +62,6 @@ export default function Recommendation() {
         );
         auction_details.push(res.data[0]);
       }
-    } else {
-      const { data: auction_details } = await Axios.get(
-        "https://localhost:5000/auction/"
-      );
     }
     setRecommended(auction_details.slice(0, 5));
   };

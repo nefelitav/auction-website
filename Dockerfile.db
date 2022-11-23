@@ -1,0 +1,8 @@
+FROM postgres:latest
+
+USER postgres
+
+COPY ./api/database.sql /docker-entrypoint-initdb.d/database.sql
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["postgres"]

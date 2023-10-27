@@ -14,6 +14,7 @@ Some interesting features of the app:
 - Filters
 - SSL/TLS
 - Image upload
+- Reviewing
 - Recommender System using Matrix Factorization
 
 ## Run
